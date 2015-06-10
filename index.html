@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/alefhebrew.css">
+		<link rel="stylesheet" href="css/theme/white2.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<img style="margin:0" width="708" height="512" data-src="img/obudget.org.png">
+				</section>
+
+				<section data-background="img/carmel-fire.jpg">
+					<h2>השריפה בכרמל</h2>
+				</section>
+
+				<section data-background="img/budget_legacy.jpg">
+					<h2>איסוף נתוני התקציב ...</h2>
+					<h2 class="fragment">... לתוך מסד נתונים</h2>
+				</section>
+
+				<section data-background="img/openbudget.png">
+					<h2>התקציב הפתוח</h2>
+				</section>
+
+				<section data-background="img/calcalist.png">
+					<h2>פותחן התקציב</h2>
+				</section>
+
+				<section data-background="img/policy.jpg">
+					<h2>הצגה שטוחה ו״אובייקטיבית״</h2>
+				</section>
+
+				<section data-background="img/policy.jpg">
+					<h2><del>הצגה שטוחה ו״אובייקטיבית״</strike></h2>
+					<h2>התמקדות במדיניות הממשלה</h2>
+				</section>
+
+				<section data-background="img/vaadat.png">
+					<h2>ועדת הכספים</h2>
+				</section>
+
+				<section data-autoslide="2000" data-background="img/js-code.jpg">
+					<h2>מקורות מידע</h2>
+					<h3 class="fragment" style="display:block;position:fixed;left:60%;bottom:100%;">אגף תקציבים</h3>
+					<h3 class="fragment" style="display:block;position:fixed;left:24%;bottom:-28%;">החשב הכללי</h3>
+					<h3 class="fragment" style="display:block;position:fixed;left:55%;bottom:-60%;">data.gov.il</h3>
+					<h3 data-autoslide="1000" class="fragment" style="display:block;position:fixed;left:0%;bottom:125%;">מערכת התמיכות</h3>
+					<h3 data-autoslide="1000" class="fragment" style="display:block;position:fixed;left:70%;bottom:-25%;">רשם החברות</h3>
+					<h3 data-autoslide="300" class="fragment" style="display:block;position:fixed;left:80%;bottom:120%;">רשם העמותות</h3>
+					<h3 data-autoslide="300" class="fragment" style="display:block;position:fixed;left:0%;bottom:-50%;">מנהל הרכש</h3>
+					<h3 data-autoslide="300" class="fragment" style="display:block;position:fixed;left:40%;bottom:130%;">מבקר המדינה</h3>
+					<h3 data-autoslide="300" class="fragment" style="display:block;position:fixed;left:-5%;bottom:100%;">רשם הקבלנים</h3>
+					<h3 data-autoslide="300" class="fragment" style="display:block;position:fixed;left:20%;bottom:-75%;">רשם היועצים</h3>
+					<h3 style="display:block" class="fragment" data-autoslide="0">וגם עריכה ידנית...</h3>
+				</section>
+
+				<section data-background="img/finance_committee.jpg">
+					<h2>הצגת מדיניות הממשלה</h2>
+				</section>
+
+				<section data-background="img/finance_committee.jpg">
+					<h2><del>הצגת מדיניות הממשלה</del></h2>
+					<h2>״שותפות״ בתהליך התקצוב</h2>
+				</section>
+
+				<section data-background="img/expenditure.jpg">
+					<h2>השלב הבא -</h2>
+					<h2 style="display:inline-block"><a href="http://obudget.org">תמיכות</a></h2> <h2 style="display:inline-block">התקשרויות הממשלה</h2>
+
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				rtl: true,
+				backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
